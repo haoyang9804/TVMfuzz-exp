@@ -1,6 +1,33 @@
+# TVMfuzz
+
+## introduction
+
+TVMfuzz is a demo project for fuzzing TVM, a widely-used Deep Learning Compiler, based on the findings in **A Comprehensive Study of Deep Learning Compiler Bugs**. TVMfuzz is capable of analyzing the interrelationship among statements and building test programs given the existing test files in TVM.
+
+This project involves only 3 folders and 1 script.
+
++ buggyFile: includes 8 bug-triggered programs found by TVMfuzz
++ tests: includes 53 effective test files in TVM for analysis
++ TVMfuzz: includes all the implementation of major features and functions of TVMfuzz
++ run.py: the script for building test programs
+
+After running *run.py*, a new folder named *byproduct* will be created and it contains 3 extra files:
+
++ asTree.txt: illustrates the AST of test files with the help of Python package *ast*
++ log.txt: records the interrelationship among all involved statements of interest
++ program.py: the generated test program
+
+## dependency and version
+
+TVMfuzz requires Python package ast, astunparse and numpy, also need to install tvm according the instruction [here](https://tvm.apache.org/docs/install/from_source.html) before executing.
+
+By the way, Python version 3.9.1 is required for successful execution.
+
+
+
 # Dataset
 
-## Introduction
+## introduction
 
 This dataset is the basic support for the paper: **A Comprehensive Study of Deep Learning Compiler Bugs**. 
 
@@ -8,7 +35,7 @@ We collected the closed and tje merged pull requests that are responsible for fi
 
 All the bugs are recorded in the excel table and the bugs of each compiler are displayed in a single worksheet.
 
-## Repositorys
+## repositorys
 
 The repositories corresponding to these three compilers are as follows. Since nGraph's support for some frameworks is in a separate repository, we also include this part of the data in the same time period.
 
@@ -24,14 +51,14 @@ https://github.com/NervanaSystems/ngraph-tf、(one model loader of nGraph)
 
 https://github.com/NervanaSystems/ngraph-onnx (one model loader of nGraph)
 
-## Information
+## information
 
 For each worksheet, the following related information are shown:
 
-+ the name of the compiler
-+ pr_id: short for pull request id
-+ the title of the pull request(pr)
-+ the url directed to this pr
-+ the concrete date when this pr was published
-+ the number of comments involved
-+ the number of files involved and their seperate names
+- the name of the compiler
+- pr_id: short for pull request id
+- the title of the pull request(pr)
+- the url directed to this pr
+- the concrete date when this pr was published
+- the number of comments involved
+- the number of files involved and their seperate names
