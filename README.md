@@ -35,9 +35,9 @@ We collected the closed and tje merged pull requests that are responsible for fi
 
 All the bugs are recorded in the excel table and the bugs of each compiler are displayed in a single worksheet.
 
-## repositorys
+## repository
 
-The repositories corresponding to these three compilers are as follows. Since nGraph's support for some frameworks is in a separate repository, we also include this part of the data in the same time period.
+The repositories corresponding to these three compilers are as follows. Since some model loaders of nGraph are in separate repositories, we also collect the related data in the same time period.
 
 TVM ：https://github.com/apache/tvm
 
