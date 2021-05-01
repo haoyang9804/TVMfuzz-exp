@@ -47,7 +47,7 @@ nGraph:
 
 https://github.com/NervanaSystems/ngraph
 
-https://github.com/NervanaSystems/ngraph-tf(one model loader of nGraph)
+https://github.com/NervanaSystems/ngraph-tf (one model loader of nGraph)
 
 https://github.com/NervanaSystems/ngraph-onnx (one model loader of nGraph)
 
