@@ -65,12 +65,11 @@ For each worksheet, the following related information are shown:
 
 **collect_bug_script:**
 
-	* collect basic bugs information.
-	 + collect Line of code about bug-fixing.
++ collect basic bugs information.
++ collect Line of code about bug-fixing.
 
 **analysis script:** 
 
-	+ plot some basic graph(e.g., bug distribution by root causes, and bugs across stags)
-	+ analyze the correlation among DL compilers.
-	+ collect and analyze the bug-fixing time
-
+* plot some basic graph(e.g., bug distribution by root causes, and bugs across stags)
+* analyze the correlation among DL compilers.
+* collect and analyze the bug-fixing time
