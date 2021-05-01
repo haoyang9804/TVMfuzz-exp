@@ -62,3 +62,15 @@ For each worksheet, the following related information are shown:
 - the concrete date when this pr was published
 - the number of comments involved
 - the number of files involved and their seperate names
+
+**collect_bug_script:**
+
+	* collect basic bugs information.
+	 + collect Line of code about bug-fixing.
+
+**analysis script:** 
+
+	+ plot some basic graph(e.g., bug distribution by root causes, and bugs across stags)
+	+ analyze the correlation among DL compilers.
+	+ collect and analyze the bug-fixing time
+
