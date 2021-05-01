@@ -62,6 +62,15 @@ For each worksheet, the following related information are shown:
 - the concrete date when this pr was published
 - the number of comments involved
 - the number of files involved and their seperate names
+- the symptom of this bug
+- the stage about this bug
+- the top root cause of this bug
+- sub_causes: short for subcategories of  root causes
+- the related framework of the Model Loading bugs
+- the crash messages type(good/ambiguous/lack/wrong) of the crash bugs, [the default value is 'good'].
+- the deleted Line of Code(LOC) when fixing  this bug
+- the added LOC when fixing this bug 
+- the changed LOC  when fixing this bug(#total_change = #delete_line + #add_line )
 
 **collect_bug_script:**
 
