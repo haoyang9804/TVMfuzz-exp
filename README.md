@@ -45,9 +45,9 @@ Glow: https://github.com/pytorch/glow
 
 nGraph:
 
-https://github.com/NervanaSystems/ngraph、
+https://github.com/NervanaSystems/ngraph
 
-https://github.com/NervanaSystems/ngraph-tf、(one model loader of nGraph)
+https://github.com/NervanaSystems/ngraph-tf(one model loader of nGraph)
 
 https://github.com/NervanaSystems/ngraph-onnx (one model loader of nGraph)
 
@@ -67,18 +67,3 @@ For each worksheet, the following related information are shown:
 - the top root cause of this bug
 - sub_causes: short for subcategories of  root causes
 - the related framework of the Model Loading bugs
-- the crash messages type(good/ambiguous/lack/wrong) of the crash bugs, [the default value is 'good'].
-- the deleted Line of Code(LOC) when fixing  this bug
-- the added LOC when fixing this bug 
-- the changed LOC  when fixing this bug(#total_change = #delete_line + #add_line )
-
-**collect_bug_script:**
-
-+ collect basic bugs information.
-+ collect Line of code about bug-fixing.
-
-**analysis script:** 
-
-* plot some basic graph(e.g., bug distribution by root causes, and bugs across stags)
-* analyze the correlation among DL compilers.
-* collect and analyze the bug-fixing time
