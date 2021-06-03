@@ -51,9 +51,9 @@ You can download the image and reproduce our experiments about TVMfuzz in the fo
 
 
 
-# Dataset
+### Dataset
 
-## introduction
+#### introduction
 
 This dataset is the basic support for the paper: **A Comprehensive Study of Deep Learning Compiler Bugs**. 
 
@@ -61,7 +61,7 @@ We collected the closed and the merged pull requests that are responsible for fi
 
 All the bugs are recorded in the excel table and the bugs of each compiler are displayed in a single worksheet.
 
-## repository
+#### repository
 
 The repositories corresponding to these three compilers are as follows. Since some model loaders of nGraph are in separate repositories, we also collect the related data in the same time period.
 
@@ -77,7 +77,7 @@ https://github.com/NervanaSystems/ngraph-tf (one model loader of nGraph)
 
 https://github.com/NervanaSystems/ngraph-onnx (one model loader of nGraph)
 
-## information
+#### information
 
 For each worksheet, the following related information are shown:
 
@@ -94,7 +94,7 @@ For each worksheet, the following related information are shown:
 - sub_causes: short for subcategories of  root causes
 - the related framework of the Model Loading bugs
 
-### Plotting
+#### Plotting
 In order to better reproduce the figures in the paper, we provide a drawing scrip (**drawing_script.R**), which can generate all the graphs in our paper. To see the generated graph intuitively, we recommend that you use RStudio to run this script. 
 First You just need to download the **dataset** folder in this repository to your computer.
 
