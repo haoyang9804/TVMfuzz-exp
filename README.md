@@ -1,4 +1,7 @@
-# TVMfuzz [![DOI](https://zenodo.org/badge/342103158.svg)](https://zenodo.org/badge/latestdoi/342103158)
+we use Zenodo to archiving our GitHub repository releases. The DOI of our artifact is DOI
+This repository has been archived using Zenodo. Anyone can publicly access the artifact via this link [![DOI](https://zenodo.org/badge/342103158.svg)](https://zenodo.org/badge/latestdoi/342103158)
+
+# TVMfuzz 
 
 ## introduction
 
