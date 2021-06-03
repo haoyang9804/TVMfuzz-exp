@@ -1,4 +1,4 @@
-# TVMfuzz
+# TVMfuzz [![DOI](https://zenodo.org/badge/369744575.svg)](https://zenodo.org/badge/latestdoi/369744575)
 
 ## introduction
 
@@ -24,6 +24,40 @@ TVMfuzz requires Python package ast, astunparse and numpy, also need to install 
 By the way, Python version 3.9.1 is required for successful execution.
 
 
+## Reproducibility
+
+### TVMFuzz
+
+To release reviews from laborious tasks of building experimental environments, we have created a docker image and pushed it to docker hub. The version of TVM installed in our image is 0.7, consistent with the one in our experiments.
+You can download the image and reproduce our experiments about TVMfuzz in the following steps:
+
+1)	Input the following commands:
+
+        docker pull mhypony/dlcstudy_tvmfuzz:latest
+
+        docker run -it mhypony/dlcstudy_tvmfuzz:latest /bin/bash
+
+2)	Now you are in our docker container, to eliminate unexpected situations that may corrupt our experiment, you should input the following two commands:
+
+        source /etc/profile
+
+        source activate
+  
+3)	Now go to the folder called **DLCstudy** and run **run.py**.
+
+5)	Finally, you can check the generated program (**program.py**) in the folder named **byproduct**. 
+
+6)	You can also download the latest version of TVM and compare the difference between executions under TVM 0.7 and TVM latest. If you are lucky, you may find some bugs that we have never found.
+
+### Plotting
+In order to better reproduce the figures in the paper, we provide a drawing scrip (**drawing_script.R**), which can generate all the graphs in our paper. To see the generated graph intuitively, we recommend that you use RStudio to run this script. 
+First You just need to download the **plotting** folder in this repository to your computer.
+
+Secondly, you need to run the script(`drawing_script.R`) with RStudio, and then all the figures in our paper will be generated one by one.
+
+Notes: 
+1. The dataset file(**dataset.xlsx**) should be placed in the same directory as the drawing_script.R file.
+2. If the running crash with a message "\`path\` does not exist: ‘dataset.xlsx’", you need set the **working directory** to source file location.
 
 # Dataset
 
@@ -31,7 +65,7 @@ By the way, Python version 3.9.1 is required for successful execution.
 
 This dataset is the basic support for the paper: **A Comprehensive Study of Deep Learning Compiler Bugs**. 
 
-We collected the closed and tje merged pull requests that are responsible for fixing bugs from their GitHub repositories over 15 months. In total, we collected 1,361 bug-fixing pull requests and identified 603 bugs, including 318 TVM bugs, 145 Glow bugs, and 140 nGraph bugs.
+We collected the closed and the merged pull requests that are responsible for fixing bugs from their GitHub repositories over 15 months. In total, we collected 1,361 bug-fixing pull requests and identified 603 bugs, including 318 TVM bugs, 145 Glow bugs, and 140 nGraph bugs.
 
 All the bugs are recorded in the excel table and the bugs of each compiler are displayed in a single worksheet.
 
@@ -61,7 +95,7 @@ For each worksheet, the following related information are shown:
 - the url directed to this pr
 - the concrete date when this pr was published
 - the number of comments involved
-- the number of files involved and their seperate names
+- the number of files involved and their separate names
 - the symptom of this bug
 - the stage about this bug
 - the top root cause of this bug

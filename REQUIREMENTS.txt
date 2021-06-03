@@ -1,0 +1,14 @@
+the hardware environment requirement:
+* 4G Memory
+* 4G storage
+
+
+the software environments requirement:  
+* Docker
+* R language
+* RStudio(version 4.0.3 (2020-10-10) is recommended)
+
+Detail Information:
+To run the aritifact, a machine with at least 4G RAM and 4G storage is needed. 
+Meanwhile, docker and R language are needed to be installed in the machine. 
+Specifically, docker is used to run TVMFuzz. R language and RStudio are required to run the drawing script.
