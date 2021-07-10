@@ -40,5 +40,4 @@ def levenshtein(seq1, seq2):
                     matrix[(x-1)%2,y-1] + 1,
                     matrix[x%2,y-1] + 1
                 )
-    # print (matrix)
     return (matrix[(size_x - 1)%2, size_y - 1])

@@ -9,9 +9,6 @@ import copy
 
 '''nestplus components'''
 def getAllElementsFromAttrCallSubsName(value):
-    
-    # import astunparse
-    # print(Green(astunparse.unparse(value)))
 
     rcur = []
     while True:
@@ -517,9 +514,6 @@ def recognizeLambda(value, indent, surround):
     for arg in value.args.args:
         param.add_arg(pVar(arg.arg))
     param.add_body(recognizeMultiAssignment(value.body, indent=indent, surround=surround))
-    # import astunparse
-    # print(Blue(astunparse.unparse(value)))    
-    # param.add_value(value)
     return param
 
 def recognizeBinOp(value, indent, surround):
@@ -580,9 +574,7 @@ def recognizeMultiAssignment(value,
         
         return recognizeConst(value, indent)
 
-    elif isinstance(value, ast.Call): 
-        # import astunparse
-        # print(Blue(astunparse.unparse(value)))
+    elif isinstance(value, ast.Call):
         return recognizeCall(value, 
                              indent,
                              outsideFunction,
@@ -657,7 +649,6 @@ def recognizeMultiAssignment(value,
         return recognizeLambda(value, indent, surround)
 
     else:
-        # pass
         raise Exception(Cyan('We never handle this ast Type: ' + str(type(value))))
 
 '''end'''
@@ -697,8 +688,6 @@ def interpreter(ln, rn, surround=None, indent=0):
     '''
 
     if not isinstance(rn, pFunc):
-        
-        # rn.add_surround(surround)
         if rn.Type == 'variable':
             rn.add_indent(indent)
         
@@ -709,7 +698,6 @@ def interpreter(ln, rn, surround=None, indent=0):
         else:
             varobjects.append(ln)
         rn.add_surround(surround)
-        # print(Green(str(rn)))
         dealWithStatement(param=rn, varobjects=varobjects)
 
     else:
@@ -771,16 +759,11 @@ def assignNodeReadyForInterpreter(lenleft,
                 Target at the situation where rightnames includes one function and varnames is longer
                 than rightnames
                 '''
-                # if rparams[i].Type != 'function':
-                #     raise Exception(
-                #         'Middle function with more than one returned value! ' + rparams[i].Type)
                 ln, rn = lparams[i:], rparams[i]
             else:
                 ln, rn = lparams[i], rparams[i]
             if isinstance(ln, list):
                 for i in ln:
-                    # if isinstance(i, pTuple):
-                    #     print(Magenta(str(i)))
                     varnamesRead.add(i.name)
             else:
                 if isinstance(ln, pVar):

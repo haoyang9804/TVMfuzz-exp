@@ -6,26 +6,22 @@ mutable = True
 '''generation.py'''
 
 funcPool = {}
-# funcNumber = {}
 varPool = set()
 withPool = set()
 clsPool = {}
 subsPool = {}
 lazy = []
 restAdjuncts = []
-# recordedFunc = []
 
 '''analyzeSyntax'''
 importSet = set()
 funcNameTopFunc = {}
-# funcNames = set()
 constants = set()
 records = {}
 
 id = 0
 
 varTofuncst = {}
-# funcDef = set()
 
 varTowith = {}
 
@@ -52,8 +48,6 @@ funcTolambda = {}
 '''getAST'''
 
 helperFuncDef = {}
-# helperStatDef = {}
-# FuncDef_parent = set()
 helperStatDef_global = []
 helperStatDef_local = {}
 funcDefParents = {}
