@@ -19,11 +19,6 @@ After running *run.py*, a new folder named *byproduct* will be created and it co
 + log.txt: records the interrelationship among all involved statements of interest
 + program.py: the generated test program
 
-## dependency and version
-
-TVMfuzz requires Python package ast, astunparse and numpy, also need to install tvm according the instruction [here](https://tvm.apache.org/docs/install/from_source.html) before executing.
-
-By the way, Python version 3.9.1 is required for successful execution.
 
 
 ## Reproducibility
