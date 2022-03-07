@@ -1,4 +1,6 @@
-This repository has been archived using Zenodo. Anyone can publicly access the artifact via the link [![DOI](https://zenodo.org/badge/342103158.svg)](https://zenodo.org/badge/latestdoi/342103158). This repo is for further development of the original [repo](https://github.com/ShenQingchao/DLCstudy), we may add more bugs and improve TVMfuzz in the future.
+This repo is for further development of the original [repo](https://github.com/ShenQingchao/DLCstudy), we may add more bugs and improve TVMfuzz in the future.
+
+[![DOI](https://zenodo.org/badge/342103158.svg)](https://zenodo.org/badge/latestdoi/342103158). 
 
 # TVMfuzz 
 
